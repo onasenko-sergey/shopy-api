@@ -36,3 +36,6 @@ npm-debug.log*
 
 # Webstorm preferences
 .idea/
+
+# Istanbul
+.nyc_output/
