@@ -29,3 +29,10 @@ node_modules
 
 lib/
 data/
+
+# Node
+*.log
+npm-debug.log*
+
+# Webstorm preferences
+.idea/
