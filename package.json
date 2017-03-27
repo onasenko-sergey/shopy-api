@@ -19,7 +19,8 @@
     "test": "npm run jshint && npm run mocha",
     "jshint": "jshint src/. test/. --config",
     "start": "node src/",
-    "mocha": "nyc --reporter=html --reporter=text-summary mocha test/ --recursive"
+    "mocha": "nyc --reporter=html --reporter=text-summary mocha test/ --recursive",
+    "coverage": "nyc report --reporter=text-lcov | coveralls"
   },
   "dependencies": {
     "body-parser": "^1.17.1",
@@ -41,6 +42,7 @@
     "winston": "^2.3.1"
   },
   "devDependencies": {
+    "coveralls": "^2.12.0",
     "jshint": "^2.9.4",
     "mocha": "^3.2.0",
     "nyc": "^10.1.2",
